@@ -1,23 +1,27 @@
+:root {
+  font-size: 100%;
+}
+
 body {
   background: $body-background-color;
   color: $foreground-color;
-  font-family: 'DINP-R', arial, serif;
-  font-size: 1.3em;
+  font-size: 1rem;
+  font-family: 'Avenir Next', 'DINP-R', arial, serif;
 }
 
 header {
-  font-size: 2em;
+  position: relative;
+  margin: 20px auto;
+  padding: 60px 30px 30px;
+  width: 90%;
+  background: $foreground-color;
+  background-size: 160px;
   color: $caption-color;
   text-align: center;
-  background: $foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
-  width: 90%;
-  margin: 20px auto;
-  position: relative;
+  font-size: 2em;
 
   small {
-    font-size: .5em;
+    font-size: 0.5em;
 
     img {
       display: inline;
@@ -27,42 +31,42 @@ header {
 }
 
 main {
-  background: $foreground-color;
-  color: $black;
   margin: 20px auto;
   padding: 40px;
   width: 90%;
+  background: $foreground-color;
+  color: $black;
 
   h1 {
-    font-size: 2em;
-    font-weight: bold;
     padding: 20px;
     text-align: center;
+    font-weight: bold;
+    font-size: 2em;
   }
 
   h2 {
+    padding: 20px;
+    text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    text-align: center;
-    padding: 20px;
   }
 
   h3 {
-    font-weight: bold;
-    text-align: center;
     padding: 10px;
+    text-align: center;
+    font-weight: bold;
   }
 }
 
 .badges {
-  line-height: .5em;
+  line-height: 0.5em;
 
   img {
     display: inline;
   }
 
   h6 {
-    font-size: .5em;
+    font-size: 0.5em;
   }
 }
 
@@ -84,62 +88,62 @@ pre {
 
   code {
     display: block;
-    background: $body-background-color;
-    color: $white;
     padding: 10px;
     border-left: 6px solid $link-color;
+    background: $body-background-color;
+    color: $white;
   }
 }
 
 .logo {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
 }
 
 ul {
-  list-style-type: square;
   list-style-position: inside;
+  list-style-type: square;
 }
 
 ol {
-  list-style-type: decimal;
   list-style-position: inside;
+  list-style-type: decimal;
 }
 
 ul ul,
 ol ul {
-  list-style-type: circle;
-  list-style-position: inside;
   margin-left: 15px;
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
 ol ol,
 ul ol {
-  list-style-type: lower-latin;
-  list-style-position: inside;
   margin-left: 15px;
+  list-style-position: inside;
+  list-style-type: lower-latin;
 }
 
 blockquote {
-  background: $light-gray;
-  border-left: 4px solid $link-color;
-  border-radius: 3px;
   margin: 10px 0;
   padding: 10px 10px 10px 20px;
+  border-left: 4px solid $link-color;
+  border-radius: 3px;
+  background: $light-gray;
 }
 
 code {
-  font-family: Consolas, 'courier new';
-  color: $link-color;
-  background-color: $light-gray;
   padding: 2px;
-  font-size: 1em;
   border-radius: 3px;
+  background-color: $light-gray;
+  color: $link-color;
+  font-size: 1em;
+  font-family: Consolas, 'courier new';
 }
 
 footer {
-  text-align: center;
   padding-bottom: 20px;
+  text-align: center;
 
   a:hover {
     color: $white;
